@@ -5,116 +5,187 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Daniel Brunelle Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../assets/css/main.css" />
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title>Daniel Brunelle Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+</head>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+<body class="is-preload">
 
-							<!-- Header -->
-							<header id="header">
-								<a href="../projects.html" class="logo">Projects</a>
-								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/djbrunelle/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://www.github.com/djbrunelle" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									<li><a href="https://www.youtube.com/@paridotgames" class="icon brands fa-youtube"><span class="label">Paridot YouTube</span></a></li>
-								</ul>
-							</header>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-							<!-- Content -->
-								<section>
-									<header class="main">
-										<h1>The Floor is Concrete</h1>
-									</header>
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
 
-									<span class="image main"><img src="../images/pic11.jpg" alt="" /></span>
+				<!-- Header -->
+				<header id="header">
+					<a href="../index.html" class="logo">Projects</a>
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/djbrunelle/" class="icon brands fa-linkedin"><span
+									class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.github.com/djbrunelle" class="icon brands fa-github"><span
+									class="label">Github</span></a></li>
+						<li><a href="https://www.youtube.com/@paridotgames" class="icon brands fa-youtube"><span
+									class="label">Paridot YouTube</span></a></li>
+					</ul>
+				</header>
 
-									<p>WIP</p>
-									<hr class="major" />
+				<!-- Content -->
+				<section>
+					<header class="major">
+						<h2>The Floor is Concrete</h2>
+					</header>
 
-								</section>
+					<span class="image main"><img src="../images/pic11.jpg" alt="" /></span>
 
-						</div>
-					</div>
+					<h3>Project Overview</h3>
 
-				<!-- Sidebar -->
-				<div id="sidebar">
-					<div class="inner">
+					<p>
+						The Floor is Concrete was the result of a 72 hour game jam where the theme was
+						"Positive/Negative" and it also had a special object which was "leaf". The game is an endless
+						runner where the objective is to use your leafblower to keep
+						a leaf from touching the ground or any obstacles in the way, and you need to get as far as
+						possible.
+					</p>
 
-						<!-- Menu -->
-							<nav id="menu">
-								<header class="major">
-									<h2>Menu</h2>
-								</header>
-								<ul>
-									<li><a href="../index.html">Portfolio</a></li>
-									<li><a href="../aboutme.html">About Me</a></li>
-									<li><a href="../resume.html">Resumé</a></li>
+					<h3>Development Notes</h3>
+					<p>
+						We were a team of 3, with a 3D modeler, a level designer, and me, the programmer.
+					</p>
+					<p>
 
-								</ul>
-							</nav>
+						As the programmer, I had a lot of fun and spent a lot of time making the wind effect from the
+						leafblower. It was kind of challenging to come up with an efficient way to handle wind, but
+						eventually landed on shooting raycasts randomly and constantly in a cone at the end of the
+						leafblower.
+						Although it may not have been the most resource efficient way to do it, it ended up working
+						fairly well. The visual effects were a similar challenge, but I decided to just dynamic draw
+						lines along the raycasts which seemed to give enough feedback to make it fairly intuitive.
 
-						<!-- Section -->
-							<!-- <section>
-								<header class="major">
-									<h2>Ante interdum</h2>
-								</header>
-								<div class="mini-posts">
-									<article>
-										<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-									</article>
-									<article>
-										<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-									</article>
-									<article>
-										<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-									</article>
-								</div>
-								<ul class="actions">
-									<li><a href="#" class="button">More</a></li>
-								</ul>
-							</section> -->
+					</p>
 
-						<!-- Section -->
-							<section>
-								<header class="major">
-									<h2>Get in touch</h2>
-								</header>
-								<p>To get in touch with me, connect with me on LinkedIn!</p>
+					<p>
+						The time limit forced me to wrap up the wind effect, as it ended up taking more than a full day
+						to get that feature to the point of usability. Other key parts I spent a lot of time on was
+						getting the game loop to make sense, as well as visual interpolations with the camera to make
+						everything feel smooth.
+					</p>
 
-								<ul class="contact">
-									<li class="icon brands fa-linkedin"><a href="#">Daniel's LinkedIn</a></li>
-								</ul>
-							</section>
 
-						<!-- Footer -->
-							<footer id="footer">
-								<p class="copyright">&copy; Daniel Brunelle. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-							</footer>
 
-					</div>
-				</div>
+					<h3>My Reflections</h3>
+					<ul>
+						<li>
+							Building the game in 1920x1080 resolution for the web was a mistake. It is very cumbersome
+							to play the game when the resolution inside the web browser is as large as the screen.
+							Fullscreen helps with this, but it's just not a great UI within itch.io
+						</li>
+						<li>
+							Although I really enjoyed the time I spent building the wind system, I should have structure
+							my time a bit better. We were really grinding towards the end to try to get everything
+							finished
+							in time. In the future, I will prioritize finiishing the game loop as quickly as possible,
+							then building feature on top of that.
+						</li>
+					</ul>
+					<hr class="major" />
+					<h3>Relevant Links</h3>
+					<ul>
+						<li><a href="https://paridot-games.itch.io/the-floor-is-concrete">itch.io Page</a></li>
+						<li><a href="https://github.com/DJBrunelle/the-floor-is-concrete">Source Code</a></li>
+					</ul>
+
+				</section>
 
 			</div>
+		</div>
 
-		<!-- Scripts -->
-			<script src="../assets/js/jquery.min.js"></script>
-			<script src="../assets/js/browser.min.js"></script>
-			<script src="../assets/js/breakpoints.min.js"></script>
-			<script src="../assets/js/util.js"></script>
-			<script src="../assets/js/main.js"></script>
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
 
-	</body>
+				<!-- Menu -->
+				<nav id="menu">
+					<section>
+						<header>
+							<h2>
+								<a href="../index.html" class="logo">Daniel Brunelle</a>
+							</h2>
+							<p>Game Programmer</p>
+						</header>
+					</section>
+
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+
+					<ul>
+						<li><a href="../index.html">Portfolio</a></li>
+						<li><a href="../aboutme.html">About Me</a></li>
+						<li><a href="../resume.html">Resumé</a></li>
+					</ul>
+				</nav>
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Skills</h2>
+					</header>
+					<div class="mini-posts">
+						<u>Languages</u>
+						<p>C#, C/C++, Python, Golang</p>
+
+						<u>Version Control</u>
+						<p>Git</p>
+
+						<u>Project Management</u>
+						<p>JIRA, Trello, Notion</p>
+
+						<u>Software/Libraries</u>
+						<p>Unity, JetBrains Rider, Visual Studio (IDE and Code), SFML</p>
+
+						<u>Soft Skills</u>
+						<p>Problem Solving, Leadership, Pleasant, Self-Critical, Responds well to constructive criticism
+						</p>
+					</div>
+
+				</section>
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Get in touch</h2>
+					</header>
+					<p>To get in touch with me, connect with me on LinkedIn!</p>
+
+					<ul class="contact">
+						<li class="icon brands fa-linkedin"><a href="#">Daniel's LinkedIn</a></li>
+					</ul>
+				</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">&copy; Daniel Brunelle 2023. All rights reserved. Design: <a
+							href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+</body>
+
 </html>

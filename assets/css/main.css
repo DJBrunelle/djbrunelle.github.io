@@ -1437,6 +1437,11 @@ ul.pagination {
     ul.pagination li:first-child {
       padding-right: 0; } }
 
+.columns > li{
+    display: block;
+    width: 50%;
+    float: left;
+}
 /* Table */
 .table-wrapper {
   -webkit-overflow-scrolling: touch;

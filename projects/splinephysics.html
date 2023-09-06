@@ -22,7 +22,7 @@
 
 							<!-- Header -->
 							<header id="header">
-								<a href="../projects.html" class="logo">Projects</a>
+								<a href="../index.html" class="logo">Projects</a>
 								<ul class="icons">
 									<li><a href="https://www.linkedin.com/in/djbrunelle/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 									<li><a href="https://www.github.com/djbrunelle" class="icon brands fa-github"><span class="label">Github</span></a></li>
@@ -32,23 +32,21 @@
 
 							<!-- Content -->
 							<section>
-								<header class="main">
-									<h1>Physics Based Train Movement Along a Spline for TrainTD</h1>
-									<h2>YouTube Video | Prototype</h2>
+								<header class="major">
+									<h2>Physics Based Train Movement Along a Spline for TrainTD</h2>
 								</header>
 
 								<h3>Project Overview</h3>
 
 								<p>
-									TrainTD is similar to a Tower Defense game like BloonsTD, but instead of placing towers on a map around a road, you are in control of a train that has the towers as train carts moving along a train track. 
-									Your job is to build up the train and fight off enemies trying to attack the train and steal the money you are collecting. 
-									The progression of the game works similarly to Age of War, where you start in the "sticks and stones" era, and slowly work your way up through medieval era, modern era, futuristic, etc.
+									This was one of my first YouTube videos, and didn't know exactly where I wanted to go with it, but it turned into a timelapse/tutorial video that explained how I built the physics spline train mechanic.
+									For the TrainTD game, I wanted to make a train that you could control and make it feel similar to how real train physics would act. I initially considered modelling a real train simuilation using tracks with colliders, and wheels on the train the react with them, 
+									however I quickly realized this would bring the project way out of scope. 
 								</p>
-
-								<h3>Scope</h3>
-								
 								<p>
-									
+									Instead, I dove into working with splines. The problem with this was that pretty much all resources I could find used t-based animation to move objects along the spline, so having objects move in response to physical forces didn't really work.
+									To solve this problem, I had to come up with my own solution to make objects moving along the spline have their own velocity that is constantly changing its direction based on the current spline position, but keeping its magnitude the same based on external forces.
+									I go over how I worked through these challenges in this video.
 								</p>
 
 
@@ -67,65 +65,76 @@
 					</div>
 
 				<!-- Sidebar -->
-				<div id="sidebar">
-					<div class="inner">
+		<div id="sidebar">
+			<div class="inner">
 
-						<!-- Menu -->
-							<nav id="menu">
-								<header class="major">
-									<h2>Menu</h2>
-								</header>
-								<ul>
-									<li><a href="../index.html">Portfolio</a></li>
-									<li><a href="../aboutme.html">About Me</a></li>
-									<li><a href="../resume.html">Resumé</a></li>
+				<!-- Menu -->
+				<nav id="menu">
+					<section>
+						<header>
+							<h2>
+								<a href="../index.html" class="logo">Daniel Brunelle</a>
+							</h2>
+							<p>Game Programmer</p>
+						</header>
+					</section>
 
-								</ul>
-							</nav>
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
 
-						<!-- Section -->
-							<!-- <section>
-								<header class="major">
-									<h2>Ante interdum</h2>
-								</header>
-								<div class="mini-posts">
-									<article>
-										<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-									</article>
-									<article>
-										<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-									</article>
-									<article>
-										<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-										<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-									</article>
-								</div>
-								<ul class="actions">
-									<li><a href="#" class="button">More</a></li>
-								</ul>
-							</section> -->
+					<ul>
+						<li><a href="../index.html">Portfolio</a></li>
+						<li><a href="../aboutme.html">About Me</a></li>
+						<li><a href="../resume.html">Resumé</a></li>
+					</ul>
+				</nav>
 
-						<!-- Section -->
-							<section>
-								<header class="major">
-									<h2>Get in touch</h2>
-								</header>
-								<p>To get in touch with me, connect with me on LinkedIn!</p>
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Skills</h2>
+					</header>
+					<div class="mini-posts">
+						<u>Languages</u>
+						<p>C#, C/C++, Python, Golang</p>
 
-								<ul class="contact">
-									<li class="icon brands fa-linkedin"><a href="#">Daniel's LinkedIn</a></li>
-								</ul>
-							</section>
+						<u>Version Control</u>
+						<p>Git</p>
 
-						<!-- Footer -->
-							<footer id="footer">
-								<p class="copyright">&copy; Daniel Brunelle. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-							</footer>
+						<u>Project Management</u>
+						<p>JIRA, Trello, Notion</p>
 
+						<u>Software/Libraries</u>
+						<p>Unity, JetBrains Rider, Visual Studio (IDE and Code), SFML</p>
+
+						<u>Soft Skills</u>
+						<p>Problem Solving, Leadership, Pleasant, Self-Critical, Responds well to constructive criticism
+						</p>
 					</div>
-				</div>
+
+				</section>
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Get in touch</h2>
+					</header>
+					<p>To get in touch with me, connect with me on LinkedIn!</p>
+
+					<ul class="contact">
+						<li class="icon brands fa-linkedin"><a href="#">Daniel's LinkedIn</a></li>
+					</ul>
+				</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">&copy; Daniel Brunelle 2023. All rights reserved. Design: <a
+							href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
+
+			</div>
+		</div>
 
 			</div>
 
