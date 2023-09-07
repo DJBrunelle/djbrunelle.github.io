@@ -1933,7 +1933,7 @@ button,
   -webkit-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   -ms-transition: margin-left 0.5s ease, box-shadow 0.5s ease;
   transition: margin-left 0.5s ease, box-shadow 0.5s ease;
-  background-color: #f5f6f7;
+  background-color: #eeeeee;
   font-size: 0.9em;
   position: relative;
   width: 26em; }
@@ -2205,7 +2205,7 @@ button,
   user-select: none;
   color: #3d4449;
   font-family: "Roboto Slab", serif;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.075em;
   list-style: none;
   margin-bottom: 0;
@@ -2216,7 +2216,7 @@ button,
     color: inherit;
     cursor: pointer;
     display: block;
-    font-size: 0.9em;
+    font-size: 1.0em;
     padding: 0.625em 0; }
     #menu ul a:hover, #menu ul span:hover {
       color: #f56a6a; }
